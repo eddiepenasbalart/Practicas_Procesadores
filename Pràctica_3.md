@@ -1,6 +1,6 @@
-# Pràctica 3 - Sistemes Operatius en Temps Real
+# Pràctica 4 - Sistemes Operatius en Temps Real
 
-## 3a
+## 4a
 
 En aquest codi, es crea un sistema amb múltiples tasques per a comprendre el funcionament d'un sistema operatiu en temps real. Aquí s'explica el funcionament del codi:
 En el setup(), es configura la comunicació sèrie i es crea una nova tasca utilitzant la funció xTaskCreate(). Els paràmetres de la funció són els següents:
@@ -49,7 +49,7 @@ void anotherTask( void * parameter )
 }
 ```
 
-## Conclusions Pràctica 3a
+## Conclusions Pràctica 4a
 
 Amb aquest codi, es crea un sistema amb dues tasques funcionant simultàniament. La tasca principal (loop()) i la tasca addicional (anotherTask) s'executaran en paral·lel, permetent veure com es divideix el temps d'ús de la CPU entre les dues tasques. Això permet comprendre el funcionament d'un sistema operatiu en temps real, on múltiples tasques poden funcionar de manera concurrent.
 
@@ -66,7 +66,7 @@ Amb aquest codi, es crea un sistema amb dues tasques funcionant simultàniament.
 
 
 
-# 3b
+# 4b
 
 En aquest codi es realitza un programa que utilitza dues tasques sincronitzades per encendre i apagar dos LEDs. Aquí s'explica el funcionament del codi:
 En el setup(), es configura la comunicació sèrie i es defineixen els pins dels LEDs com a sortida. A continuació, es creen dues tasques utilitzant la funció xTaskCreate(). Els paràmetres de la funció són els següents:
@@ -116,7 +116,7 @@ void LED_OFF (void * pvParameters){
 }
 ```
 
-## Conclusions Pràctica 3b
+## Conclusions Pràctica 4b
 
 Amb aquest codi, es creen dues tasques sincronitzades que funcionen en paral·lel. La primera tasca (LED_ON) s'encarrega d'encendre i apagar un LED cada segon, mentre que la segona tasca (LED_OFF) s'encarrega d'encendre i apagar un altre LED cada 500ms. Les tasques estan sincronitzades en el temps, ja que el retard en cada bucle està ajustat perquè coincideixin els enceniments i apagaments dels dos LEDs. Això permet crear un programa que controla múltiples tasques de manera coordinada en un sistema en temps real
 
