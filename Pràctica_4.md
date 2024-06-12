@@ -1,6 +1,6 @@
-# Pràctica 4 - WIFI i BLUETOOTH
+# Pràctica 3 - WIFI i BLUETOOTH
 
-## 4a - WIFI
+## 3a - WIFI
 
 En aquest codi es realitza la configuració d'un servidor web utilitzant el mòdul WiFi de l'ESP32 per crear una pàgina web senzilla. Aquí s'explica el funcionament del codi:
 S'inclouen les llibreries necessàries, com ara "WiFi.h" per connectar-se a la xarxa WiFi i "WebServer.h" per crear i gestionar el servidor web.
@@ -61,13 +61,13 @@ server.handleClient();
 
 
 
-A continuació, es defineix el contingut de la pàgina web com una cadena de caràcters en format HTML. En aquest cas, es mostra un encapçalament amb el text "Pràctica 4"
+A continuació, es defineix el contingut de la pàgina web com una cadena de caràcters en format HTML. En aquest cas, es mostra un encapçalament amb el text "Pràctica 3"
 
 ```cpp
 String HTML = "<!DOCTYPE html>\
 <html>\
 <body>\
-<h1> Pràctica 4. ;</h1>\
+<h1> Pràctica 3. ;</h1>\
 </body>\
 </html>";
 ```
@@ -78,7 +78,7 @@ void handle_root() {
 server.send(200, "text/html", HTML);
 }
 ```
-## Conclusions Pràctica 4a
+## Conclusions Pràctica 3a
 
 Amb aquest codi, es crea un servidor web bàsic en l'ESP32 que mostra una pàgina web senzilla quan es fa una petició a l'adreça IP de l'ESP32. El contingut de la pàgina web es defineix amb l'ús de codi HTML i es pot personalitzar segons les necessitats de l'usuari.
 
@@ -96,7 +96,7 @@ Amb aquest codi, es crea un servidor web bàsic en l'ESP32 que mostra una pàgin
 
 
 
-# 4b - BLUETOOTH
+# 3b - BLUETOOTH
 
 En aquest codi es mostra com establir una connexió Bluetooth mitjançant l'ús de la llibreria "BluetoothSerial.h" a l'ESP32. A continuació s'explica com funciona el codi:
 S'inclou la llibreria "BluetoothSerial.h" que permet l'ús de les funcionalitats Bluetooth a l'ESP32.
@@ -129,7 +129,7 @@ void loop() {
   delay(20);
 }
 ```
-## Conclusions Pràctica 4b
+## Conclusions Pràctica 3b
 
 Amb aquest codi, es permet establir una connexió Bluetooth amb altres dispositius i intercanviar missatges entre ells. Les dades rebudes pel port sèrie són enviades a través de la connexió Bluetooth i les dades rebudes a través del Bluetooth es mostren pel port sèrie. Això permet una comunicació bidireccional entre l'ESP32 i altres dispositius amb connexió Bluetooth.
 
